@@ -1,0 +1,23 @@
+
+[general]
+	#Range: 0.1 ~ 1.0
+	"Flight speed limiter" = 0.3
+	#Range: 0.5 ~ 10.0
+	"Predator damage factor" = 1.0
+	#Range: 0.2 ~ 5.0
+	"Predator health factor" = 1.0
+
+["Predator spawn chances"]
+	#Configure predator spawn weight & min/max group size. Set weight to 0 to disable.
+	#Range: 0 ~ 64
+	minimum = 1
+	#Range: 0 ~ 64
+	maximum = 3
+	#Range: 0 ~ 100
+	weight = 4
+
+["Predator spawn biomes"]
+	#Biome types to include & exclude.
+	include = ["FOREST", "PLAINS", "HILLS", "SWAMP", "SANDY", "SNOWY", "WASTELAND", "BEACH"]
+	exclude = ["MOUNTAIN", "NETHER"]
+
