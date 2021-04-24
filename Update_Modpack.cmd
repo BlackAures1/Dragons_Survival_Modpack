@@ -9,8 +9,8 @@ echo.
 echo Conflicted files (marked C) will be replaced to ensure modpack functions.
 echo.
 cd %~dp0
-IF NOT EXIST ".\svn\svn.exe" goto :error_svn_missing
-.\svn\svn.exe update --accept=tf
+IF NOT EXIST "..\..\..\svn\svn.exe" goto :error_svn_missing
+..\..\..\svn\svn.exe update --accept=tf
 IF %ERRORLEVEL% NEQ 0 goto :error_svn
 echo.
 echo Modpack updates should be complete. Resuming game start...
